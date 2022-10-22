@@ -1,0 +1,5 @@
+dotnet aspnet-codegenerator identity --listFiles --no-build
+
+dotnet aspnet-codegenerator identity -dc Globomantics.Survey.Data.IdentityDbContext --files "Account.Manage.DownloadPersonalData;Account.Manage.DeletePersonalData" --useSqLite --force
+
+
