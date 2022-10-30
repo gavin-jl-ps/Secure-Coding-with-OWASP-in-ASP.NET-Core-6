@@ -48,7 +48,7 @@ namespace Globomantics.Survey.Controllers
 
        public ActionResult SurveyCompleteMessageEF(string id)
         {
-            var result = _globomanticsSurveyDbContext
+            var results = _globomanticsSurveyDbContext
                 .CustomerSurveys
                 .FromSqlRaw("Select * from CustomerSurveys where id = '" + id.ToUpper() + "'")
                 .ToList();
